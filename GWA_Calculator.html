@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>GWA Calculator</title>
+    <style type="text/css">
+  
+        h1{
+            color: #56c3ef;
+        }
+
+        h2{
+            color: #56c3ef;
+        }
+
+        input{
+            color:#ebef75;
+        }
+
+        button{
+            color: #fc68d2;
+        }
+
+       body{
+			background-image:url(https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg);
+			background-color: #7ee45e;
+		    background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .egg{
+            background-color: #7ee45e;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+    <nav class="navbar-expand-md bg-black navbar-black fixed-top">
+	<!-- Brand/Logo -->
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"></a>
+</div>
+	<!-- Add Links -->
+<div class="collapse navbar-collapse">
+	<ul class="navbar-nav me-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html" style="color: #ff02a6;">|Home|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="GWA_Calculator.html" style="color: #ff02a6;">|GWA Calculator|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="School_Club_Information.html" style="color: #ff02a6;">|School Club Information|</a>
+		</li>
+	</ul>
+	<!-- Add a search bar -->
+    <form class="d-flex">
+    	    <input class="form-control" text="text" placeholder="search...">
+    	    <button class="btn btn-primary" type="button">Search</button>
+    </form>
+</div>
+</div>
+</nav>
+
+<div class="egg">
+    <h1>Student Grade Calculator</h1><br>
+        <input type="text" id="1stName" placeholder="Enter Your First Name" class="form-control" style="text-align: center; font-weight: bold; color: rgb(255, 47, 0);"/><br>
+        <input type="text" id="LstName" placeholder="Enter Your Last Name" class="form-control" style="text-align: center; font-weight: bold; color: rgb(255, 47, 0);"/><br><br>
+        <h2>Enter Your Grades: </h2><br>
+        <input type="text" id="Sci" placeholder="Enter Your Science Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/>
+        <input type="text" id="Mat" placeholder="Enter Your Math Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/><br>
+        <input type="text" id="Soc_Sci" placeholder="Enter Your SS Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/>
+        <input type="text" id="Eng" placeholder="Enter Your English Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/><br>
+        <input type="text" id="Fil" placeholder="Enter Your Filipino Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/>
+        <input type="text" id="In_Co_Te" placeholder="Enter Your ICT Grade" class="form-control" style="text-align: center; font-weight: bold; color: rgb(0, 128, 255);"/><br>
+        <br>
+        <button type="submit" py-click="general_weighted_average">Calculate GWA</button>
+        <script type="py" src="main2.py"></script>
+</div>
+<br><br>
+<div id="student_info"></div><br>
+<div id="summary"></div><br>
+<div id="output"></div><br>
+</center>
+</body>
+</html>

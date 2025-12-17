@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>School Club Information</title>
+    <style type="text/css">
+ 
+        H1{
+            color: #56c3ef;
+        }
+
+        p{
+            color:#ebef75;
+        }
+
+        button{
+            color: #fc68d2;
+        }
+
+       body{
+			background-image:url(https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg);
+			background-color: #7ee45e;
+		    background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .igari{
+            border: 5px;
+            border-color: #aa00ff;
+        }
+
+        .container1{
+            background-color: #4779e6;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+     <nav class="navbar-expand-md bg-black navbar-black fixed-top">
+	<!-- Brand/Logo -->
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"></a>
+</div>
+	<!-- Add Links -->
+<div class="collapse navbar-collapse">
+	<ul class="navbar-nav me-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html" style="color: #ff02a6;">|Home|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="GWA_Calculator.html" style="color: #ff02a6;">|GWA Calculator|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="School_Club_Information.html" style="color: #ff02a6;">|School Club Information|</a>
+		</li>
+	</ul>
+	<!-- Add a search bar -->
+    <form class="d-flex">
+    	    <input class="form-control" text="text" placeholder="search...">
+    	    <button class="btn btn-primary" type="button">Search</button>
+    </form>
+</div>
+</div>
+</nav>
+
+        <br>
+        <div class="igari">
+       <H1 class="title">School Club Information</H1><br><br>
+
+       <p class="paragraph" style="color: #f32d2d;">Select a Club: </p>
+
+	<select id="clubselect" class="select form-control" required>
+        <option value="0" selected disabled>Clubs :3</option>
+		<option value="1">Dance Club</option>
+		<option value="2">Glee Club</option>
+		<option value="3">Science Club</option>
+		<option value="4">Communication Arts Club</option>
+		<option value="5">Basketball Varsity</option>
+		<option value="6">Volleyball Varsity</option>
+	</select>
+       </div>
+    <div class="display">
+    <button type="submit" py-click="show_club_info" class="form-control" id="club_info_show" style="color: #078303;">Show Club Information</button>
+    </center>
+
+    <div class="container1" style="margin: 0 auto;">
+        <pre>
+            <div class="outputs" id="info_output"></div><br>
+        </pre>
+    </div>
+    </div>
+
+    <script type="py" src="main3.py"></script>
+</body>
+</html>
